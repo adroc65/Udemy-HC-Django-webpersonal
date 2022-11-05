@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+    
+{% block headers %}
+    <h1>Acerca de ...</h1>
+    <span class="subheading">Te contare acerca de mi</span>
+{% endblock %}
+
+{% block content %}
+    <div class="row"> 
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid avatar" src="{% static 'core/img/cara.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Adrián Omodeo</h2>   
+            <p>Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio.</p>
+            <p>Tantas cosas en la mente me aterran, el pensar en todo y nada de una vez, el estar dormido, el soñar con frío el permanecer perdido, buscándote.</p>
+            <p>Cuéntame y olvido. Enséñame y recuerdo. Involúcrame y aprendo ... Benjamin Franklin</p>
+        </div>
+    </div>
+{% endblock %}
